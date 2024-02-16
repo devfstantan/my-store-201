@@ -107,6 +107,7 @@ class ProductController extends Controller
         foreach (self::$products as $p) {
             if($p['id'] === $id){
                 $product = $p;
+                break;
             }
         }
         if(! $product){
